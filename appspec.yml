@@ -2,7 +2,7 @@ version: 0.0
 os: linux
 files:
   - source: /
-    destination: /opt/codedeploy-agent/deployment-root
+    destination: home/ec2-user/opt/codedeploy-agent/deployment-root/deployment-logs
 hooks:
   BeforeInstall:
     - location: script/install_dependencies.sh
