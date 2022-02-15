@@ -7,9 +7,10 @@ hooks:
   BeforeInstall:
     - location: script/install_dependencies.sh
       timeout: 300
-      
+      runas: ec2-user
     - location: script/start_server.sh
       timeout: 300
+      runas: ec2-user
       
   
 
